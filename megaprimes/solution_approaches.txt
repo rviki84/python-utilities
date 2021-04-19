@@ -1,0 +1,20 @@
+megaprimes.py
+=============
+1. Iterate over odd numbers divided by all numbers from 2 to (odd-1) and look for non-zero reminders.
+2. Then filter out the megaprimes by excluding primes from step 1 with any digits containing [0,1,4,6,8,9]
+
+
+megaprimesOpt.py
+================
+1. Iterate over odd numbers divided by all primes from 2 to (odd-1) and look for non-zero reminders.
+2. Then filter out the megaprimes by excluding primes from step 1 with any digits containing [0,1,4,6,8,9]
+
+This approach is bit optimised, "works better" as the divisors are primes and not all integers
+
+
+megaprimesFast.py
+=================
+1. Even better algorithm but generating just the megaprimes.
+2. It first generates the possible megaprime combinations (which is far far less in count than prime) using [2,3,5,7] set and checks for prime condition.
+
+The result for 10^9 is noted in the code result section as comment.
